@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leyu · 稳定访问入口与页面说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f0f0f0;
+            font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1e1e1e;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            letter-spacing: 0.01em;
+        }
+
+        .page-wrapper {
+            max-width: 860px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 1.75rem 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+            border: 1px solid #e6e6e6;
+            transition: box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.03);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 2.5rem 2rem 2rem;
+            background: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #111;
+            margin-bottom: 0.6rem;
+        }
+
+        .hero .lead {
+            font-size: 1.05rem;
+            color: #4a4a4a;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 380;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 0.9rem;
+            border-left: 4px solid #888;
+            padding-left: 0.75rem;
+            color: #222;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #2c2c2c;
+        }
+
+        .blockquote-inset {
+            background: #f7f7f7;
+            border-left: 4px solid #b3b3b3;
+            padding: 1rem 1.5rem;
+            margin: 1.2rem 0 1.4rem 0;
+            border-radius: 0 10px 10px 0;
+            color: #3b3b3b;
+            font-style: normal;
+            font-size: 0.95rem;
+        }
+
+        .blockquote-inset strong {
+            font-weight: 500;
+            color: #1a1a1a;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 0.8rem;
+            margin: 0.75rem 0 0.25rem 0;
+        }
+
+        .tag {
+            background: #ededed;
+            padding: 0.2rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #2b2b2b;
+            border: 1px solid #d4d4d4;
+        }
+
+        .visit-line {
+            background: #fafafa;
+            border-top: 1px solid #e2e2e2;
+            margin-top: 1rem;
+            padding-top: 1.25rem;
+            font-size: 0.98rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.3rem;
+            color: #2f2f2f;
+        }
+
+        .visit-line a {
+            color: #2a5c8a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted #9bb7d4;
+            transition: border-bottom 0.2s, color 0.2s;
+        }
+
+        .visit-line a:hover {
+            color: #0f3b66;
+            border-bottom: 1px solid #0f3b66;
+        }
+
+        .faq-item {
+            margin-bottom: 0.9rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.2rem;
+            color: #1a1a1a;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #7a7a7a;
+            padding: 1.5rem 0 0.5rem;
+            border-top: 1px solid #dadada;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.75rem;
+            }
+
+            .card {
+                padding: 1.25rem 1.2rem;
+            }
+
+            .hero {
+                padding: 1.75rem 1rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 1.6rem;
+            }
+
+            .blockquote-inset {
+                padding: 0.8rem 1rem;
+                margin: 1rem 0;
+            }
+
+            .section-title {
+                font-size: 1.1rem;
+            }
+
+            .visit-line {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrapper">
+
+    <!-- hero 区域：简洁标题 + 导语 -->
+    <div class="card hero">
+        <h1>稳定入口 · 页面说明</h1>
+        <div class="lead">
+            从最直接的路径抵达 <span style="white-space:nowrap;">leyu</span>，理解一个站点的结构、定位与访问逻辑。
+        </div>
+    </div>
+
+    <!-- 第一段正文：稳定入口的意义 -->
+    <div class="card">
+        <div class="section-title">入口即结构</div>
+        <p>
+            对于经常需要访问特定资源的使用者而言，一个清晰、低延迟、不易变动的入口是效率的基础。域名本身即为第一重指引，而页面内的说明则承担了上下文补充与预期管理的角色。<strong>leyu</strong> 所对应的站点，在内容组织上遵循了简明的层级：首页聚合信息，子路径对应具体功能。本页面围绕这一点展开，帮助新访客快速建立认知地图。
+        </p>
+        <p>
+            一个可靠的入口应当包含两个要素：稳定的 URL 和自洽的页面语义。前者是技术层面的可达性，后者是信息层面的可理解性。下文将从导航方式、场景适配以及常见疑问三个维度，进一步拆解这个站点的使用轮廓。
+        </p>
+    </div>
+
+    <!-- 第二段正文：页面说明与导航逻辑 -->
+    <div class="card">
+        <div class="section-title">页面说明与导航逻辑</div>
+        <p>
+            当前页面的定位是辅助性索引页，而非功能界面。它不承载复杂的交互，而是提供一种「前理解」——让访问者在进入具体模块之前，先了解整体脉络。站点内部主要分为信息展示区与引导区，所有关键资源均通过主域下的路径进行分发。<a href="https://chinese-pc-leyu.com" style="color:#2a5c8a; text-decoration: underline dotted 1px; text-underline-offset:3px;">leyu</a> 作为根域名的直接代表，在站内所有页面中保持一致的可访问性。
+        </p>
+        <p>
+            从导航效率的角度来看，站内不存在超过三次点击才能到达的内容节点。每个区块都配有简短的描述文本，用户可根据自身需求直接跳转。对于首次接触的访客，建议先浏览首页的概括信息，再根据兴趣选择具体模块。
+        </p>
+
+        <div class="blockquote-inset">
+            <strong>引用提示：</strong> 设计一个稳定的入口，本质上是为信息流提供一个不变的锚点。当外部链接或书签指向根域名时，这个锚点便成为每次访问的默认起点。
+        </div>
+    </div>
+
+    <!-- 第三段正文：使用场景与适配 -->
+    <div class="card">
+        <div class="section-title">适配场景与操作提示</div>
+        <p>
+            根据站点结构，以下三类场景最为常见：<br>
+            <span style="display:inline-block; margin-top:0.3rem;">① 快速查阅公开信息 —— 直接访问首页即可获得概览；</span><br>
+            <span style="display:inline-block;">② 定向查找特定内容 —— 利用站内导航或搜索入口进入对应分类；</span><br>
+            <span style="display:inline-block;">③ 定期回溯与更新确认 —— 将根域名加入书签，每次访问均从 <a href="https://chinese-pc-leyu.com" style="color:#2a5c8a; text-decoration:none; border-bottom:1px dotted #9bb7d4;">leyu</a> 开始，确保路径一致性。</span>
+        </p>
+        <div class="tag-list">
+            <span class="tag">稳定访问</span>
+            <span class="tag">信息结构</span>
+            <span class="tag">导航指南</span>
+            <span class="tag">入口说明</span>
+        </div>
+
+        <div class="visit-line">
+            <span>➜ 直接使用根域</span>
+            <span><a href="https://chinese-pc-leyu.com">leyu</a></span>
+            <span>作为每次访问的固定入口 · 无需中间页</span>
+        </div>
+    </div>
+
+    <!-- FAQ 摘要卡片 -->
+    <div class="card">
+        <div class="section-title">常见疑问 · 摘要</div>
+        <div class="faq-item">
+            <strong>Q：这个页面是站点的首页吗？</strong>
+            <p>A：它是说明页，并非功能首页。功能首页位于根域名下，本页面旨在提供上下文和导航说明。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：如何确认我访问的是正确的站点？</strong>
+            <p>A：请核对浏览器地址栏中的域名是否为 <code>chinese-pc-leyu.com</code>，并注意页面内所有指向 <a href="https://chinese-pc-leyu.com" style="color:#2a5c8a; text-decoration:none; border-bottom:1px dotted #9bb7d4;">leyu</a> 的链接均指向同一根域。</p>
+        </div>
+        <div class="faq-item">
+            <strong>Q：页面内容是否会频繁变动？</strong>
+            <p>A：本说明页仅在站点结构发生调整时更新，日常保持稳定。根域名的指向长期有效。</p>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer-note">
+        leyu · 页面说明 · 版本 2025.04
+    </div>
+</div>
+</body>
+</html>

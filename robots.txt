@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alexoriisic3amir.github.io/chinese-pc-leyu-com-2/sitemap.xml
